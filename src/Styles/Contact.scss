@@ -1,0 +1,81 @@
+@use './theme.scss' as *;
+
+
+.contact-container {
+    padding-top: 96px;
+
+    h6 {
+        margin: 0;
+        color: $color-primary-variant;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: $font-2;
+        margin-top: 16px;
+
+        @include breakpoints(sm) {
+            font-size: 9px;
+        }
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 48px;
+        font-family: $font-1;
+        line-height: 1.5;
+        color: #333333;
+        margin-bottom: 48px;
+
+        @include breakpoints(sm) {
+            font-size: 24px;
+        }
+    }
+
+    .contact-form {
+        margin: 0 auto;
+        max-width: 656px;
+        background-color: #F5F3F2;
+        padding: 72px;
+
+        @include breakpoints(sm) {
+            padding: 40px 16px ;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+
+
+            input,
+            textarea {
+                padding: 18px 16px;
+                border-radius: 4px;
+                font-family: $font-2;
+                border: 1px solid rgba(51, 51, 51, 0.17);
+                background-color: transparent;
+
+                &::placeholder {
+                    color: #757575;
+                    font-family: $font-2;
+                    letter-spacing: 0.3px;
+                }
+
+                @include breakpoints(sm) {
+                }
+
+            }
+
+            .button-form {
+                background-color: $color-primary;
+                text-align: center;
+                margin-top: 40px;
+                color: #F5F3F2;
+                font-family: $font-1;
+                font-weight: bold;
+                letter-spacing: 0.3px;
+            }
+
+
+        }
+    }
+}

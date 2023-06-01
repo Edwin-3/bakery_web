@@ -1,0 +1,104 @@
+@use './theme.scss' as *;
+
+.team-section {
+    margin: 0 auto;
+    position: relative;
+
+    @include breakpoints(sm) {
+        text-align: left;
+        padding: 0 16px;
+    }
+
+    h4 {
+        font-size: 48px;
+        font-family: $font-1;
+        margin: 0;
+        color: #333333;
+
+        @include breakpoints(sm) {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        color: #6A7280;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 8px;
+        font-family: $font-2;
+
+        @include breakpoints(sm) {
+            width: 100%;
+        }
+    }
+
+    .wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+
+        @include breakpoints(md) {
+            padding-inline: 48px;
+            max-width: 800px;
+        }
+
+        @include breakpoints(sm) {
+            padding-inline: 0;
+            margin-top: 32px;
+            flex-direction: column;
+            row-gap: 32px;
+
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+
+            @include breakpoints(sm) {
+                align-items: flex-start;
+
+            }
+
+
+            img {
+                width: 240px;
+                height: 240px;
+
+                @include breakpoints(md) {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                @include breakpoints(sm) {
+                    width: 80px;
+                    height: 80px;
+                }
+
+            }
+
+            h5 {
+                margin: 0;
+                margin-top: 24px;
+                margin-bottom: 4px;
+                font-size: 20px;
+                font-family: $font-1;
+
+            }
+
+            p {
+                margin: 0;
+                color: #666666;
+                font-size: 16px;
+                font-weight: 400;
+                max-width: 500px;
+            }
+
+        }
+    }
+}

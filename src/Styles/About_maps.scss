@@ -1,0 +1,57 @@
+@use './theme.scss' as *;
+
+
+.maps-section {
+    min-height: 550px;
+    margin-top: 96px;
+    display: flex;
+    flex-direction: row;
+
+    @include breakpoints(sm) {
+        flex-direction: column;
+    }
+
+    .maps-content {
+        flex: 50%;
+        background-color: #F5F3F2;
+        padding: 64px 96px;
+        text-align: left;
+        @include breakpoints(sm) {
+            padding: 64px 16px;
+        }
+    
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+            font-family: $font-1;
+            line-height: 1.5;
+            color: #333333;
+            margin-bottom: 48px;
+
+            @include breakpoints(sm) {
+                font-size: 24px;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            font-family: $font-2;
+            line-height: 1.5;
+            color: #666666;
+            margin-bottom: 48px;
+            max-width: 500px;
+
+            @include breakpoints(sm) {
+                font-size: 14px;
+            }
+        }
+
+        .maps-view {
+            flex: 50%;
+            background-color: #666666;
+            height: 550px;
+        }
+    }
+}

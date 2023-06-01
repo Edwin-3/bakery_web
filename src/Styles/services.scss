@@ -1,0 +1,137 @@
+@use './theme.scss' as *;
+
+.service-section {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+
+    .service-imgs {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        @include breakpoints(sm) {
+            display: none;
+        }
+
+        .vector3-img {
+            width: 316px;
+            height: 316px;
+
+            @include breakpoints(md) {
+                width: 210px;
+                height: 210px;
+            }
+
+            @include breakpoints(sm) {
+                width: 210px;
+                height: 210px;
+            }
+
+        }
+
+        .vector4-img {
+            margin-top: -310px;
+            margin-left: -30px;
+            width: 400px;
+            height: 849px;
+
+            @include breakpoints(md) {
+                width: 236px;
+                height: 502px;
+                margin-top: -170px;
+                margin-left: -30px;
+            }
+
+            @include breakpoints(sm) {
+                width: 210px;
+                height: 210px;
+            }
+
+        }
+
+        .vector5-img {
+            margin-top: -350px;
+            margin-left: 60px;
+            width: 316px;
+            height: 316px;
+
+            @include breakpoints(md) {
+                width: 210px;
+                height: 210px;
+                margin-top: -200px;
+                margin-left: 0px;
+
+            }
+
+            @include breakpoints(sm) {
+                width: 210px;
+                height: 210px;
+            }
+        }
+    }
+
+    .service-content {
+        text-align: left;
+
+        @include breakpoints(sm) {
+            margin-inline: 16px;    
+        }
+
+        h6 {
+            color: #A06D51;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 48px;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-family: 'PT Sans', sans-serif;
+            color: #333333;
+            margin: 0;
+            margin-bottom: 24px;
+            @include breakpoints(sm) {
+                font-size: 24px;
+            }
+        }
+
+        .service-wrapper {
+            display: flex;
+            gap: 16px;
+            max-width: 500px;
+            padding: 32px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            margin-bottom: 24px;
+            border-radius: 2px;
+
+            @include breakpoints(sm) {
+                padding: 16px;
+            }
+        }
+
+        .service-text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-align: left;
+        }
+
+        h4 {
+            margin: 0;
+            padding: 0;
+            font-family: $font-2;
+            color: #333333;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: $font-2;
+            color: #666666;
+        }
+    }
+}

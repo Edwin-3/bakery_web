@@ -1,0 +1,83 @@
+@use './theme.scss' as *;
+
+.values-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    @include breakpoints(sm) {
+        min-height: 73vh;
+    }
+    .img-04 {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include breakpoints(md) {
+            width: 236px;
+            height: 502px;
+        }
+
+        @include breakpoints(sm) {
+            width: 210px;
+            height: 210px;
+            display: none;
+        }
+    }
+
+    .img-05 {
+        @include breakpoints(sm) {
+            position: absolute;
+            left: 16px;
+        }
+    }
+
+    .values-content {
+        position: absolute;
+        left: 40%;
+        bottom: 100px;
+        max-width: 600px;
+        text-align: left;
+
+        @include breakpoints(sm) {
+            left: 16px;
+        }
+
+        h6 {
+            margin: 0;
+            color: $color-primary-variant;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-family: $font-2;
+            margin-top: 16px;
+
+            @include breakpoints(sm) {
+                font-size: 9px;
+            }
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+            font-family: $font-1;
+            line-height: 1.5;
+            color: #333333;
+
+            @include breakpoints(sm) {
+                font-size: 24px;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            font-family: $font-2;
+            line-height: 1.5;
+            color: #666666;
+            margin-bottom: 24px;
+
+            @include breakpoints(sm) {
+                font-size: 14px;
+            }
+        }
+    }
+}

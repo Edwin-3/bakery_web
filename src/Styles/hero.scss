@@ -1,0 +1,173 @@
+@use './theme.scss' as *;
+
+.hero-section {
+    position: relative;
+
+    .vector1-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+
+        @include breakpoints(md) {
+            width: 210px;
+            height: 210px;
+        }
+
+        @include breakpoints(sm) {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    .vector2-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 8000;
+
+        @include breakpoints(md) {
+            width: 236px;
+            height: 500px;
+        }
+
+        @include breakpoints(sm) {
+            width: 152px;
+            height: 323px;
+        }
+    }
+
+    .plate-img {
+        position: absolute;
+        right: 10%;
+        top: 40px;
+        z-index: 9999;
+
+        @include breakpoints(md) {
+            width: 146px;
+            height: 144px;
+        }
+
+        @include breakpoints(sm) {
+            width: 68px;
+            height: 68px;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        right: 17.3%;
+        top: 390px;
+        z-index: 9999;
+    
+        @include breakpoints(sm) {
+            top: 56%;
+            right: 9%;
+            display: none;
+        }
+    }
+
+    .hero-content {
+        text-align: center;
+        padding-top: 64px;
+        position: relative;
+        z-index: 999999;
+
+
+        .logo-img {
+            @include breakpoints(md) {
+                width: 150px;
+                height: 121px;
+            }
+
+            @include breakpoints(sm) {
+                width: 86px;
+                height: 69px;
+            }
+        }
+
+        .bread-img {
+            @include breakpoints(md) {
+                width: 305px;
+                height: 270px;
+            }
+
+            @include breakpoints(sm) {
+                width: 150px;
+                height: 130px;
+            }
+        }
+
+        h2 {
+            font-size: 64px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: #141413;
+            margin-top: 24px;
+            margin-bottom: 48px;
+
+            @include breakpoints(md) {
+                font-size: 32px;
+            }
+
+            @include breakpoints(sm) {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .hero-text {
+        position: absolute;
+        bottom: 12%;
+        left: 10vw;
+        text-align: right;
+
+        @include breakpoints(sm) {
+            position: relative;
+            bottom: 1%;
+            left: 16px;
+            text-align: left;
+        }
+
+        hr {
+            width: 200px;
+            height: 2px;
+            color: #DBD4D1;
+
+            @include breakpoints(sm) {
+                display: none;
+            }
+        }
+
+        h5 {
+            color: #A06D51;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        p {
+            color: #666666;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 16px;
+        }
+
+        .btn-2 {
+            display: none;
+
+            @include breakpoints(sm) {
+                display: block;
+                position: relative;
+                right: 0;
+                top: 0;
+                z-index: 9999;
+                background-color: #E38872;
+                color: #F5F3F2;
+                border: none;
+                padding: 12px 16px;
+                border-radius: 4px;
+
+            }
+        }
+    }
+}

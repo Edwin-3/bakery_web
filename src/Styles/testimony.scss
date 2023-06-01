@@ -1,0 +1,29 @@
+@use './theme.scss' as *;
+
+.testimony-section{
+    margin: 0 auto;
+    background-image: url('../assets/testimony_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        width: 60%;
+        color: $bg-color;
+        font-size: 40px;
+        font-family: $font-2;
+
+        @include breakpoints(md) {
+            font-size: 32px;
+            width: 80%;
+        }
+        @include breakpoints(sm) {
+            font-size: 24px;
+            width: 90%;
+        }
+    }
+}

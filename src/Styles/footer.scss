@@ -1,0 +1,80 @@
+@use './theme.scss' as *;
+
+.footer-bg {
+    background-image: url('../assets/testimony_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 96px;
+    padding-inline: 16px;
+    padding-bottom: 48px;
+    text-align: left;
+    max-width: 1200px;
+
+    @include breakpoints(sm) {
+        flex-direction: row;
+        padding-top: 48px;
+    }
+
+    h5 {
+        color: $color-primary;
+        font-size: 18px;
+        font-family: $font-1;
+        margin: 0;
+    }
+
+    p,
+    a {
+        margin: 0;
+        color: $bg-color;
+        font-size: 16px;
+        font-family: $font-2;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4 {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .col-4 {
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            input[type='email'] {
+                padding: 14px 16px;
+                max-width: 299px;
+                border-radius: 4px;
+                background-color: $bg-color;
+                border: none;
+                font-family: $font-2;
+            }
+
+            .btn{
+                text-align: center;
+            }
+
+        }
+    }
+
+}
